@@ -14,6 +14,8 @@
 		70EA37571EEA6CD3004B4673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EA37551EEA6CD3004B4673 /* LaunchScreen.storyboard */; };
 		70EA37621EEA6CD4004B4673 /* StylrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA37611EEA6CD4004B4673 /* StylrTests.swift */; };
 		70EA376D1EEA6CD4004B4673 /* StylrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA376C1EEA6CD4004B4673 /* StylrUITests.swift */; };
+		70EA377F1EEA9E33004B4673 /* FavDisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA377E1EEA9E33004B4673 /* FavDisplayController.swift */; };
+		70EA37841EEAA15A004B4673 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA37831EEAA15A004B4673 /* CustomMessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		70EA37681EEA6CD4004B4673 /* StylrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StylrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EA376C1EEA6CD4004B4673 /* StylrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylrUITests.swift; sourceTree = "<group>"; };
 		70EA376E1EEA6CD4004B4673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70EA377E1EEA9E33004B4673 /* FavDisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavDisplayController.swift; sourceTree = "<group>"; };
+		70EA37831EEAA15A004B4673 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,11 @@
 		70EA374B1EEA6CD3004B4673 /* Stylr */ = {
 			isa = PBXGroup;
 			children = (
-				70EA374C1EEA6CD3004B4673 /* AppDelegate.swift */,
-				70EA374E1EEA6CD3004B4673 /* ViewController.swift */,
-				70EA37501EEA6CD3004B4673 /* Main.storyboard */,
+				70EA377B1EEA6D12004B4673 /* Model */,
+				70EA377C1EEA6D1B004B4673 /* Controller */,
+				70EA377A1EEA6D03004B4673 /* View */,
+				70EA377D1EEA6D29004B4673 /* Supporting Files */,
 				70EA37531EEA6CD3004B4673 /* Assets.xcassets */,
-				70EA37551EEA6CD3004B4673 /* LaunchScreen.storyboard */,
-				70EA37581EEA6CD3004B4673 /* Info.plist */,
 			);
 			path = Stylr;
 			sourceTree = "<group>";
@@ -123,6 +126,49 @@
 				70EA376E1EEA6CD4004B4673 /* Info.plist */,
 			);
 			path = StylrUITests;
+			sourceTree = "<group>";
+		};
+		70EA377A1EEA6D03004B4673 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70EA37801EEA9F08004B4673 /* customCell */,
+				70EA37501EEA6CD3004B4673 /* Main.storyboard */,
+				70EA37551EEA6CD3004B4673 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		70EA377B1EEA6D12004B4673 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		70EA377C1EEA6D1B004B4673 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				70EA374E1EEA6CD3004B4673 /* ViewController.swift */,
+				70EA377E1EEA9E33004B4673 /* FavDisplayController.swift */,
+				70EA374C1EEA6CD3004B4673 /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		70EA377D1EEA6D29004B4673 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70EA37581EEA6CD3004B4673 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70EA37801EEA9F08004B4673 /* customCell */ = {
+			isa = PBXGroup;
+			children = (
+				70EA37831EEAA15A004B4673 /* CustomMessageCell.swift */,
+			);
+			name = customCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +306,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				70EA374F1EEA6CD3004B4673 /* ViewController.swift in Sources */,
+				70EA377F1EEA9E33004B4673 /* FavDisplayController.swift in Sources */,
+				70EA37841EEAA15A004B4673 /* CustomMessageCell.swift in Sources */,
 				70EA374D1EEA6CD3004B4673 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
