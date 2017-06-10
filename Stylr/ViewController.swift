@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     var shirtArray = [UIImage]()
@@ -17,7 +18,6 @@ class ViewController: UIViewController {
     var favitems = [UIImage]()
     var totalFav = [UIImage]()
 
-    
     
     @IBOutlet weak var topImg: UIImageView!
     
@@ -113,12 +113,18 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func home(_ sender: Any) {
-    }
+
     
+
     
+  
+  //  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
-    
-    
+        // get a reference to the second view controller
+    //    let secondViewController = segue.destination as! SecondVC
+        
+        // set a variable in the second view controller with the String to pass
+      //  secondViewController.receivedString = textField.text!
+    //}
 }
 

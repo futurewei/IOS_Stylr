@@ -41,10 +41,6 @@
                                 <rect key="frame" x="0.0" y="588" width="375" height="79"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v7V-Zx-Mzs">
-                                <rect key="frame" x="0.0" y="464" width="375" height="125"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                            </containerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topBarLogo" translatesAutoresizingMaskIntoConstraints="NO" id="EaX-3H-p2D">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -150,20 +146,24 @@
                                     <action selector="next4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bl-tX-d5c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f2-Kx-uFC">
-                                <rect key="frame" x="125" y="588" width="125" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="inventoryButtonUnselected"/>
-                                <connections>
-                                    <segue destination="ytJ-cw-gBi" kind="push" id="chS-SC-Xmx"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="975-e9-5Ev">
                                 <rect key="frame" x="248" y="588" width="127" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="favoritesButtonUnselected"/>
                                 <connections>
                                     <segue destination="ndq-Qx-TSj" kind="push" id="7YY-FH-uJ1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mXC-fl-U79">
+                                <rect key="frame" x="125" y="588" width="125" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-k0-lSx">
+                                <rect key="frame" x="125" y="588" width="125" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="inventoryButtonUnselected"/>
+                                <connections>
+                                    <segue destination="ytJ-cw-gBi" kind="presentation" id="HfX-xz-POd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -181,23 +181,18 @@
             </objects>
             <point key="canvasLocation" x="1087.2" y="65.217391304347828"/>
         </scene>
-        <!--View Controller-->
+        <!--SecondVC-->
         <scene sceneID="Nt6-x7-UlB">
             <objects>
-                <viewController id="ytJ-cw-gBi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" id="ytJ-cw-gBi" customClass="SecondVC" customModule="Stylr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fkr-Yu-OMb"/>
+                        <viewControllerLayoutGuide type="bottom" id="hUi-bB-S6m"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4hi-Uo-DlF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="my5-9Z-wqV">
-                                <rect key="frame" x="0.0" y="588" width="126" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="designerButtonUnselected"/>
-                                <connections>
-                                    <action selector="home:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZL-0z-QhQ"/>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="1hV-j3-m6A"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgL-z1-pMA">
                                 <rect key="frame" x="252" y="588" width="133" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -215,6 +210,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qp3-ti-Uh3">
+                                <rect key="frame" x="1" y="588" width="125" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="designerButtonUnselected"/>
+                                <connections>
+                                    <action selector="backHome:" destination="ytJ-cw-gBi" eventType="touchUpInside" id="NgH-hL-iJ3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -326,8 +329,8 @@
         <image name="topBarLogo" width="375" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="HfX-xz-POd"/>
         <segue reference="dzF-a7-EuJ"/>
-        <segue reference="7YY-FH-uJ1"/>
-        <segue reference="Rr2-WK-Wue"/>
+        <segue reference="3Iy-gq-YhM"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70784ED91EEBC46A000B1D30 /* secondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70784ED81EEBC46A000B1D30 /* secondVC.swift */; };
 		70EA374D1EEA6CD3004B4673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA374C1EEA6CD3004B4673 /* AppDelegate.swift */; };
 		70EA374F1EEA6CD3004B4673 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA374E1EEA6CD3004B4673 /* ViewController.swift */; };
 		70EA37521EEA6CD3004B4673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EA37501EEA6CD3004B4673 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70784ED81EEBC46A000B1D30 /* secondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondVC.swift; sourceTree = "<group>"; };
 		70EA37491EEA6CD3004B4673 /* Stylr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stylr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EA374C1EEA6CD3004B4673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70EA374E1EEA6CD3004B4673 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				70EA374E1EEA6CD3004B4673 /* ViewController.swift */,
+				70784ED81EEBC46A000B1D30 /* secondVC.swift */,
 				70EA377E1EEA9E33004B4673 /* FavDisplayController.swift */,
 				70EA374C1EEA6CD3004B4673 /* AppDelegate.swift */,
 			);
@@ -309,6 +312,7 @@
 				70EA377F1EEA9E33004B4673 /* FavDisplayController.swift in Sources */,
 				70EA37841EEAA15A004B4673 /* CustomMessageCell.swift in Sources */,
 				70EA374D1EEA6CD3004B4673 /* AppDelegate.swift in Sources */,
+				70784ED91EEBC46A000B1D30 /* secondVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +557,7 @@
 				70EA37731EEA6CD4004B4673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70EA37741EEA6CD4004B4673 /* Build configuration list for PBXNativeTarget "StylrTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +566,7 @@
 				70EA37761EEA6CD4004B4673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70EA37771EEA6CD4004B4673 /* Build configuration list for PBXNativeTarget "StylrUITests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +575,7 @@
 				70EA37791EEA6CD4004B4673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
