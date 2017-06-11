@@ -224,16 +224,16 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="2WZ-VG-VmD"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bic-Bm-RZz">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bic-Bm-RZz">
                                 <rect key="frame" x="0.0" y="58" width="375" height="526"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QpC-A4-tQe">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QpC-A4-tQe" id="dFT-Rm-YRx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -243,6 +243,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="yxc-lZ-mxp"/>
+                    <connections>
+                        <outlet property="tableView" destination="bic-Bm-RZz" id="yMx-Gn-kTr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AkC-Hy-vG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -272,9 +275,6 @@
                                 <rect key="frame" x="125" y="588" width="127" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="inventoryButtonSelected"/>
-                                <connections>
-                                    <action selector="stay:" destination="ytJ-cw-gBi" eventType="touchUpInside" id="Ccg-9R-q2b"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topBarLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dbT-fH-2g6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -312,15 +312,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="top:" destination="ytJ-cw-gBi" eventType="touchUpInside" id="Flb-C7-GdV"/>
-                                    <segue destination="9RL-cl-vHP" kind="show" id="mK4-2H-hzE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpt-Fe-xWH">
-                                <rect key="frame" x="204" y="429" width="138" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="shoes:" destination="ytJ-cw-gBi" eventType="touchUpInside" id="Da2-sR-3vy"/>
-                                    <segue destination="9RL-cl-vHP" kind="show" id="AjU-Qd-lO6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHX-xm-m8C">
@@ -339,12 +330,20 @@
                                     <segue destination="9RL-cl-vHP" kind="show" id="mh4-VI-MGe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-rY-Ltj">
+                                <rect key="frame" x="201" y="429" width="141" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="shoe:" destination="ytJ-cw-gBi" eventType="touchUpInside" id="99H-e5-D1G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="kaM-1s-PpR"/>
                     <connections>
                         <outlet property="textField" destination="Wq3-vC-vk5" id="HOB-Jq-irh"/>
+                        <segue destination="9RL-cl-vHP" kind="show" identifier="gotoDisplay" id="jw9-yF-fKh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsR-2x-ECB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -458,9 +457,9 @@
         <image name="topBarLogo" width="375" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="2WZ-VG-VmD"/>
+        <segue reference="jw9-yF-fKh"/>
         <segue reference="Rr2-WK-Wue"/>
         <segue reference="3Iy-gq-YhM"/>
-        <segue reference="bon-6H-Zex"/>
-        <segue reference="2WZ-VG-VmD"/>
     </inferredMetricsTieBreakers>
 </document>

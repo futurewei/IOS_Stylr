@@ -13,7 +13,7 @@ class SecondVC: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     var keyword = ""
-    
+    var trigger = "None"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,31 +25,41 @@ class SecondVC: UIViewController {
     }
     
     @IBAction func search(_ sender: Any) {
-        print ("yay")
+        trigger = "search"
         keyword = textField.text!
     }
 
     
     
     @IBAction func top(_ sender: Any) {
-            print ("top")
+            trigger = "top"
+            keyword = "top"
+            self.performSegue(withIdentifier: "gotoDisplay", sender: self)
     }
     
     
     
     @IBAction func glass(_ sender: Any) {
-        print ("glass")
-
+        trigger = "top"
+        keyword = "top"
+        self.performSegue(withIdentifier: "gotoDisplay", sender: self)
     }
     
 
     @IBAction func bot(_ sender: Any) {
-        print ("bot")
+       trigger = "bot"
+       keyword = "bot"
+       self.performSegue(withIdentifier: "gotoDisplay", sender: self)
     }
     
-    @IBAction func shoes(_ sender: Any) {
-        print ("shoes")
+
+
+    @IBAction func shoe(_ sender: Any) {
+        trigger = "shoe"
+        keyword = "shoe"
+        self.performSegue(withIdentifier: "gotoDisplay", sender: self)
     }
+
     
     @IBAction func backHome(_ sender: Any) {
         print("hi")
@@ -65,5 +75,22 @@ class SecondVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let nextView = segue.destination as! closetController
+            if (trigger == "top")
+            {
+                nextView.passIn = "top"
+            }else if (trigger == "shoe")
+            {
+                nextView.passIn = "shoe"
+            }else if (trigger == "bot")
+            {
+                nextView.passIn = "bot"
+            }
+            else{
+            nextView.passIn = textField.text!
+        }
+        }
 }
+
