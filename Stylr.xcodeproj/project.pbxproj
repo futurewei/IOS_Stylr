@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		70167F4B1EECC7C700F7AA43 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70167F491EECC7C700F7AA43 /* CustomMessageCell.swift */; };
 		70167F4C1EECC7C700F7AA43 /* CustomMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70167F4A1EECC7C700F7AA43 /* CustomMessageCell.xib */; };
+		70167F4E1EECE51600F7AA43 /* closetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70167F4D1EECE51600F7AA43 /* closetController.swift */; };
 		70784ED91EEBC46A000B1D30 /* secondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70784ED81EEBC46A000B1D30 /* secondVC.swift */; };
 		70EA374D1EEA6CD3004B4673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA374C1EEA6CD3004B4673 /* AppDelegate.swift */; };
 		70EA374F1EEA6CD3004B4673 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA374E1EEA6CD3004B4673 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		70167F491EECC7C700F7AA43 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 		70167F4A1EECC7C700F7AA43 /* CustomMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMessageCell.xib; sourceTree = "<group>"; };
+		70167F4D1EECE51600F7AA43 /* closetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = closetController.swift; sourceTree = "<group>"; };
 		70784ED81EEBC46A000B1D30 /* secondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondVC.swift; sourceTree = "<group>"; };
 		70EA37491EEA6CD3004B4673 /* Stylr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stylr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EA374C1EEA6CD3004B4673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				70784ED81EEBC46A000B1D30 /* secondVC.swift */,
 				70EA377E1EEA9E33004B4673 /* FavDisplayController.swift */,
 				70EA374C1EEA6CD3004B4673 /* AppDelegate.swift */,
+				70167F4D1EECE51600F7AA43 /* closetController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				70EA377F1EEA9E33004B4673 /* FavDisplayController.swift in Sources */,
 				70EA374D1EEA6CD3004B4673 /* AppDelegate.swift in Sources */,
 				70784ED91EEBC46A000B1D30 /* secondVC.swift in Sources */,
+				70167F4E1EECE51600F7AA43 /* closetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

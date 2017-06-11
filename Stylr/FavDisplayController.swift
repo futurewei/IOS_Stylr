@@ -27,6 +27,8 @@ class FavDisplayController: UIViewController, UITableViewDataSource{
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func Home(_ sender: Any) {
+           }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -39,6 +41,8 @@ class FavDisplayController: UIViewController, UITableViewDataSource{
     
 
     
+    @IBAction func stary(_ sender: Any) {
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 3

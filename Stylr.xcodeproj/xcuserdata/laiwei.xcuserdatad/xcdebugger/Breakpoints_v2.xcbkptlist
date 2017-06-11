@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Stylr/ViewController.swift"
-            timestampString = "518786627.88983"
+            timestampString = "518840865.162544"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>

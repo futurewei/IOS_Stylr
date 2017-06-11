@@ -113,6 +113,9 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func stay(_ sender: Any) {
+        print ("o")
+    }
 
     
 
