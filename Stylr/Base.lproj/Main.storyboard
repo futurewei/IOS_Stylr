@@ -299,14 +299,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MC3-fS-C21">
-                                <rect key="frame" x="303" y="172" width="39" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="search:" destination="ytJ-cw-gBi" eventType="touchUpInside" id="X8M-KK-sfx"/>
-                                    <segue destination="9RL-cl-vHP" kind="show" id="bon-6H-Zex"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sl-b2-fZ6">
                                 <rect key="frame" x="29" y="274" width="141" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -335,6 +327,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="shoe:" destination="ytJ-cw-gBi" eventType="touchUpInside" id="99H-e5-D1G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6O-4w-nWE">
+                                <rect key="frame" x="296" y="173" width="46" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="search:" destination="ytJ-cw-gBi" eventType="touchUpInside" id="acp-eH-nik"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -458,7 +457,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2WZ-VG-VmD"/>
-        <segue reference="bon-6H-Zex"/>
+        <segue reference="yse-wn-Zvu"/>
         <segue reference="Rr2-WK-Wue"/>
         <segue reference="3Iy-gq-YhM"/>
     </inferredMetricsTieBreakers>

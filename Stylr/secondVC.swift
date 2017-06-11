@@ -24,13 +24,12 @@ class SecondVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
     @IBAction func search(_ sender: Any) {
         trigger = "search"
         keyword = textField.text!
         self.performSegue(withIdentifier: "gotoDisplay", sender: self)
     }
-
-    
     
     @IBAction func top(_ sender: Any) {
             trigger = "top"
@@ -96,9 +95,7 @@ class SecondVC: UIViewController {
             nextView.passIn = textField.text!
             }
         }else {
-            let nextView = segue.destination as! closetController
-            nextView.passIn = textField.text!
-        
+                   
         }
     }
 }
