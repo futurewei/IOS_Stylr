@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70167F4B1EECC7C700F7AA43 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70167F491EECC7C700F7AA43 /* CustomMessageCell.swift */; };
+		70167F4C1EECC7C700F7AA43 /* CustomMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70167F4A1EECC7C700F7AA43 /* CustomMessageCell.xib */; };
 		70784ED91EEBC46A000B1D30 /* secondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70784ED81EEBC46A000B1D30 /* secondVC.swift */; };
 		70EA374D1EEA6CD3004B4673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA374C1EEA6CD3004B4673 /* AppDelegate.swift */; };
 		70EA374F1EEA6CD3004B4673 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA374E1EEA6CD3004B4673 /* ViewController.swift */; };
@@ -16,7 +18,6 @@
 		70EA37621EEA6CD4004B4673 /* StylrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA37611EEA6CD4004B4673 /* StylrTests.swift */; };
 		70EA376D1EEA6CD4004B4673 /* StylrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA376C1EEA6CD4004B4673 /* StylrUITests.swift */; };
 		70EA377F1EEA9E33004B4673 /* FavDisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA377E1EEA9E33004B4673 /* FavDisplayController.swift */; };
-		70EA37841EEAA15A004B4673 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA37831EEAA15A004B4673 /* CustomMessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70167F491EECC7C700F7AA43 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		70167F4A1EECC7C700F7AA43 /* CustomMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMessageCell.xib; sourceTree = "<group>"; };
 		70784ED81EEBC46A000B1D30 /* secondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondVC.swift; sourceTree = "<group>"; };
 		70EA37491EEA6CD3004B4673 /* Stylr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stylr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EA374C1EEA6CD3004B4673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		70EA376C1EEA6CD4004B4673 /* StylrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylrUITests.swift; sourceTree = "<group>"; };
 		70EA376E1EEA6CD4004B4673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70EA377E1EEA9E33004B4673 /* FavDisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavDisplayController.swift; sourceTree = "<group>"; };
-		70EA37831EEAA15A004B4673 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +171,8 @@
 		70EA37801EEA9F08004B4673 /* customCell */ = {
 			isa = PBXGroup;
 			children = (
-				70EA37831EEAA15A004B4673 /* CustomMessageCell.swift */,
+				70167F491EECC7C700F7AA43 /* CustomMessageCell.swift */,
+				70167F4A1EECC7C700F7AA43 /* CustomMessageCell.xib */,
 			);
 			name = customCell;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				70EA37571EEA6CD3004B4673 /* LaunchScreen.storyboard in Resources */,
 				70EA37541EEA6CD3004B4673 /* Assets.xcassets in Resources */,
+				70167F4C1EECC7C700F7AA43 /* CustomMessageCell.xib in Resources */,
 				70EA37521EEA6CD3004B4673 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,8 +313,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				70EA374F1EEA6CD3004B4673 /* ViewController.swift in Sources */,
+				70167F4B1EECC7C700F7AA43 /* CustomMessageCell.swift in Sources */,
 				70EA377F1EEA9E33004B4673 /* FavDisplayController.swift in Sources */,
-				70EA37841EEAA15A004B4673 /* CustomMessageCell.swift in Sources */,
 				70EA374D1EEA6CD3004B4673 /* AppDelegate.swift in Sources */,
 				70784ED91EEBC46A000B1D30 /* secondVC.swift in Sources */,
 			);

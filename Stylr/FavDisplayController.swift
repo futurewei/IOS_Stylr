@@ -17,9 +17,10 @@ class FavDisplayController: UIViewController, UITableViewDataSource{
         
          imgTableView.dataSource = self
         
-        imgTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
+        imgTableView.register(UINib(nibName: "CustomMessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
         configureTableView()
         
+        //imgTableView.separatorStyle = .none
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,7 +32,8 @@ class FavDisplayController: UIViewController, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
-        cell.img.image = #imageLiteral(resourceName: "sunglasses")
+        cell.img1.image = #imageLiteral(resourceName: "tank")
+        cell.img2.image = #imageLiteral(resourceName: "stilettos")
         return cell
     }
     
@@ -43,8 +45,7 @@ class FavDisplayController: UIViewController, UITableViewDataSource{
     }
     
     func configureTableView() {
-        imgTableView.rowHeight = UITableViewAutomaticDimension
-        imgTableView.estimatedRowHeight = 120.0
+        imgTableView.estimatedRowHeight = 140
     }
     
 }
