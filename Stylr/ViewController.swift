@@ -117,7 +117,12 @@ class ViewController: UIViewController {
         print ("o")
     }
 
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gotoFav" {
+         let favView = segue.destination as! FavDisplayController
+         favView.addings = totalFav
+        }
+    }
 
     
   

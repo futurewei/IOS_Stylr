@@ -27,6 +27,7 @@ class closetController: UIViewController, UITableViewDataSource {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "CustomMessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
         configureTableView()
+        tableView.separatorStyle = .none
 
         // Do any additional setup after loading the view.
     }

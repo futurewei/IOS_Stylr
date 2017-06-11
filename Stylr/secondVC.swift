@@ -27,6 +27,7 @@ class SecondVC: UIViewController {
     @IBAction func search(_ sender: Any) {
         trigger = "search"
         keyword = textField.text!
+        self.performSegue(withIdentifier: "gotoDisplay", sender: self)
     }
 
     
@@ -77,7 +78,10 @@ class SecondVC: UIViewController {
     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gotoDisplay" {
+        
             let nextView = segue.destination as! closetController
+
             if (trigger == "top")
             {
                 nextView.passIn = "top"
@@ -88,9 +92,14 @@ class SecondVC: UIViewController {
             {
                 nextView.passIn = "bot"
             }
-            else{
+            else {
             nextView.passIn = textField.text!
+            }
+        }else {
+            let nextView = segue.destination as! closetController
+            nextView.passIn = textField.text!
+        
         }
-        }
+    }
 }
 

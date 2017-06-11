@@ -143,7 +143,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="favoritesButtonUnselected"/>
                                 <connections>
-                                    <segue destination="ndq-Qx-TSj" kind="presentation" id="7YY-FH-uJ1"/>
+                                    <segue destination="ndq-Qx-TSj" kind="presentation" identifier="gotoFav" id="7YY-FH-uJ1"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mXC-fl-U79">
@@ -458,7 +458,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2WZ-VG-VmD"/>
-        <segue reference="jw9-yF-fKh"/>
+        <segue reference="bon-6H-Zex"/>
         <segue reference="Rr2-WK-Wue"/>
         <segue reference="3Iy-gq-YhM"/>
     </inferredMetricsTieBreakers>

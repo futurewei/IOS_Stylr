@@ -11,16 +11,22 @@ import UIKit
 class FavDisplayController: UIViewController, UITableViewDataSource{
 
     @IBOutlet weak var imgTableView: UITableView!
+    var totalFav:[UIImage] = []
+    var addings :[UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         imgTableView.dataSource = self
+        totalFav += addings
+        print (totalFav)
+        print (totalFav.count)
+        imgTableView.dataSource = self
         
-        imgTableView.register(UINib(nibName: "CustomMessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
+        
+        imgTableView.register(UINib(nibName: "middleCellTableViewCell", bundle: nil), forCellReuseIdentifier: "middleCellTableViewCell")
         configureTableView()
-        
-        //imgTableView.separatorStyle = .none
+        imgTableView.isScrollEnabled=true
+        imgTableView.separatorStyle = .none
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,14 +34,14 @@ class FavDisplayController: UIViewController, UITableViewDataSource{
     }
     
     @IBAction func Home(_ sender: Any) {
-           }
+        dismiss(animated: true, completion: nil)
+    }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
-        cell.img1.image = #imageLiteral(resourceName: "tank")
-        cell.img2.image = #imageLiteral(resourceName: "stilettos")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "middleCellTableViewCell", for: indexPath) as! middleCellTableViewCell
+        cell.img.image = totalFav[indexPath.row]
         return cell
     }
     
@@ -45,7 +51,7 @@ class FavDisplayController: UIViewController, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 3
+        return totalFav.count
     }
     
     func configureTableView() {
