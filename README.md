@@ -1,5 +1,6 @@
 # IOS_Stylr
 
+Stylr APP is a clothing app that allows the user to sort through their inventory, construct outfits, and send requests to the SmartRack to deliver collections of items to the front of the closet for easy pickup.
 
 Me and my teammates designed the Stylr app in UCB 160 course, implented used KinomaJS. But KinomaJS is not very user friendly. So I decided to implemented it using IOS by self alone.
 
@@ -12,8 +13,9 @@ In the Home page below, users can screenshot to favroite items and also switch i
 ![c3da3e30-3de5-43d3-9a8b-d76d30c8ec60](https://user-images.githubusercontent.com/13871858/27009780-94d2094e-4e4b-11e7-84d5-24fb59d4a190.png)
 
 
-Stylr also supports a searching/filtering feature 
 ![c9a61b5b-edec-49bf-837b-c9915a88c9a2](https://user-images.githubusercontent.com/13871858/27009777-912e91f4-4e4b-11e7-9628-8f5b9daa7d01.png)
+
+
 
 ![497022d1-bec0-4703-a083-fabcfd8a88be](https://user-images.githubusercontent.com/13871858/27009778-93005fe4-4e4b-11e7-90e6-fafde1135cce.png)
 
